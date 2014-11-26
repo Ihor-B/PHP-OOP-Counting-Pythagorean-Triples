@@ -13,7 +13,7 @@
     <section id="pythagorean">
         <div class="container">
             <div class="row">
-                <h1>Counting Pythagorean Triples</h1>
+                <h2>Counting Pythagorean Triples</h2>
                 <div class="col-12">
 					<form id="triples" accept-charset="utf-8">
 						<label class="input_label" for="integers">String of Integers:</label>
