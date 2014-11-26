@@ -20,7 +20,6 @@
 
 		}
 
-
 		protected function exponentialExpression() {
 
 			$numbers = $this->getArray();
@@ -41,8 +40,7 @@
 
 		}
 
-
-		public function countTriples() {
+		public function listedTriples() {
 
 			$numbers = $this->exponentialExpression();
 
@@ -59,6 +57,8 @@
 			    			if ($a < $b && $a + $b == $c) { // Detect triples
 
 			    				$i++;
+
+	    						$triple[] = array('i'=>$i,'a'=>sqrt($a), 'b'=>sqrt($b), 'c'=>sqrt($c));
 			    				
 			    			}
 
@@ -70,13 +70,13 @@
 
 	    	}
 
-	    	return $i;
+	    	return $triple;
 
 		}
 
 		public function encodeJSON() {
 
-			$jsonoutput = array('result' => $this->countTriples());
+			$jsonoutput = $this->listedTriples();
 
 			return json_encode($jsonoutput);
 

@@ -26,6 +26,7 @@
             <div class="row">
                 <div class="col-12 result">
                     <p><span class="label">Result:</span><span id="result">&nbsp;</span></p>
+                    <p><span class="label">Triples:</span><span id="list"></span></p>
                 </div>
             </div>
         </div>

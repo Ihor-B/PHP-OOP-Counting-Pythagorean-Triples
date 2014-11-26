@@ -8,9 +8,12 @@
         url: 'classes/counting.php',
         data: 'integers=' + $('#integers').val(),
         success: function(response){
-          $('#result').html(
-            response['result']
-          );
+          $.each(response, function(index, number) {
+            $('#result').html(number.i);
+          });
+          $.each(response, function(index, data) {
+            $("#list").append("<li>" + data.a + " - " + data.b + " - " + data.c + "</li>");
+          });
         }
       });
       return false;
